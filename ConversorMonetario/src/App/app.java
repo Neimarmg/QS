@@ -3,8 +3,7 @@ package App;
 import java.awt.EventQueue;
 import App.Forms.Painel;
  
-public class app {
-	
+public class app {	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
