@@ -1,14 +1,15 @@
 package App;
  
 import java.awt.EventQueue;
-import App.Forms.Painel;
+
+import V.Form_Painel;
  
 public class app {	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Painel frame = new Painel();
+					Form_Painel frame = new Form_Painel();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();

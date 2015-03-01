@@ -1,17 +1,15 @@
 package C;
 
-import App.Forms.Print;
+import V.Print;
 
 public class validador {
 	
 	static int contador = 0;
 	
-	
 	/*Método de retorno da contagem dos dados válidos*/
 	public static int getContador() {
 		return contador;
 	}
-	
 	
 	/*Alerte de dado inválido e contagem dos dodos válidos*/
 	private static void emiteAlerta(String valor, String msg){
@@ -21,7 +19,6 @@ public class validador {
 			contador++;
 		}
 	}	
-	
 	
 	/*Método de validação dos dados*/
 	public static void validaDado(String valor, String unidadeMonetaria){
@@ -34,6 +31,5 @@ public class validador {
 			Print.msg("O campo valor deve ser prenchido com valores muméricos!");
 
 		}		
-		
 	}
 }
