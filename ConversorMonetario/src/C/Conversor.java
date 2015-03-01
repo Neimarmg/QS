@@ -1,43 +1,59 @@
 package C;
+import M.Dados;
 import V.Print;
 
 public class Conversor {	
 	
-	/*Método de converção de valores*/
-	private static String converteLibra(String valor){
+	/**
+	 * Método de converção de valores
+	 */
+	private static int converteLibra(int valor, int cotacao){
+		
+		//Desenvolver o miolo do método para calcular a cotação e retorna um valor int
+		
 		
 		return valor;
 	}
 	
 	
-	/*Método de converção de valores*/
-	private static String converteEuro(String valor){
+	/**
+	 * Método de converção de valores
+	 */
+	private static int converteEuro(int valor, int cotacao){
+		
+		//Desenvolver o miolo do método para calcular a cotação e retorna um valor int
 		
 		return valor;
 	}
 	
 	
-	/*Método de converção de valores*/
-	private  static String converteDolar(String valor){
+	/**
+	 * Método de converção de valores
+	 */
+	private  static int converteDolar(int valor, int cotacao){
+		
+		//Desenvolver o miolo do método para calcular a cotação e retorna um valor int
 		
 		return valor;
 	}
 	
 	
-	/*Médoto de processamento e seleção da unidade e seleção de conversor*/
-	private static void executaComando(String valor, String unidadeMonetaria){
+	/**
+	 * Médoto de processamento e seleção da unidade e seleção de conversor
+	 */
+	private static void executaComando(String unidadeMonetaria){
 		switch (unidadeMonetaria) {
 		
 		case "Dolar":
-			Print.msg(converteDolar(valor));
+			Print.msg(converteDolar(Dados.getValor(), Dados.getCotacao()));
 			break;
 			
 		case "Euro":
-			Print.msg(converteEuro(valor));
+			Print.msg(converteEuro(Dados.getValor(), Dados.getCotacao()));
 			break;
 
 		case "Libra":
-			Print.msg(converteLibra(valor));
+			Print.msg(converteLibra(Dados.getValor(), Dados.getCotacao()));
 			break;
 			
 		default:
@@ -47,11 +63,13 @@ public class Conversor {
 	}
 	
 	
-	/*Método de carregamento de valores e validação dos dados*/
-	public static void caregaValores(String valor, String unidadeMonetaria){
-		validador.validaDado(valor, unidadeMonetaria);
-		if (validador.getContador() == 2){
-			executaComando(valor, unidadeMonetaria);
+	/**
+	 * Método de carregamento de valores e validação dos dados
+	 */
+	public static void caregaValores(String valor, String cotacao , String unidadeMonetaria){
+		validador.validaDado(valor,cotacao, unidadeMonetaria);
+		if (validador.getContador() == 3){
+			executaComando(unidadeMonetaria);
 		}
 	}
 }
