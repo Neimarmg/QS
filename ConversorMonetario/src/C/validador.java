@@ -33,9 +33,10 @@ public class validador {
 	 */
 	public static void validaDado(String valor, String cotacao, String unidadeMonetaria){
 		contador=0;		
+		
 		try {			
-			Dados.setValor(Integer.parseInt(valor));
-			Dados.setCotacao(Integer.parseInt(cotacao));
+			Dados.setValor(Float.parseFloat(valor));
+			Dados.setCotacao(Float.parseFloat(cotacao));
 			emiteAlerta(unidadeMonetaria, "Falta opção de moeda!");
 			emiteAlerta(valor, "Falta valor de conversão!");
 			emiteAlerta(cotacao, "Falta opção de cotação!");

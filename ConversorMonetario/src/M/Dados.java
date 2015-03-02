@@ -1,21 +1,22 @@
 package M;
 
-public class Dados {
-	static int valor,cotacao;
 
-	public static int getValor() {
+public class Dados {
+	static float valor,cotacao;
+
+	public static float getValor() {
 		return valor;
 	}
 
-	public static void setValor(int valor) {
+	public static void setValor(float valor) {
 		Dados.valor = valor;
 	}
 
-	public static int getCotacao() {
+	public static float getCotacao() {
 		return cotacao;
 	}
 
-	public static void setCotacao(int cotacao) {
+	public static void setCotacao(float cotacao) {
 		Dados.cotacao = cotacao;
 	}
 }

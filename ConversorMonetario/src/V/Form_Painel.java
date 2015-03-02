@@ -37,17 +37,17 @@ public class Form_Painel extends JFrame {
 	private JLabel lblMoeda;
 	
 	/***/
-	public String getMoeda(String unidadeMonetaria) {
+	private String getMoeda(String unidadeMonetaria) {
 		return unidadeMonetaria = (String) unidadeMonetaria.toString();
 	}
 	
 	/***/
-	public String getValor(String valorDeConversao) {
+	private  String getValor(String valorDeConversao) {
 		 return valorDeConversao = (String) valorDeConversao;
 	}
 	
 	/***/
-	public String getCotacao(String cotacao) {
+	private String getCotacao(String cotacao) {
 		 return cotacao = (String) cotacao;
 	}
 	
