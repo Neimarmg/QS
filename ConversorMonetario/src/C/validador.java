@@ -35,11 +35,11 @@ public class validador {
 		contador=0;		
 		
 		try {			
-			Dados.setValor(Float.parseFloat(valor));
-			Dados.setCotacao(Float.parseFloat(cotacao));
-			emiteAlerta(unidadeMonetaria, "Falta opção de moeda!");
-			emiteAlerta(valor, "Falta valor de conversão!");
-			emiteAlerta(cotacao, "Falta opção de cotação!");
+			Dados.setValor(Float.parseFloat(valor)); /*Valida dado convertendo-o para o tipo desejado" se inválida vai para exessão*/
+			Dados.setCotacao(Float.parseFloat(cotacao)); /*Valida dado convertendo-o para o tipo desejado" se inválida vai para exessão*/
+			emiteAlerta(unidadeMonetaria, "Falta opção de moeda!"); /*Valida se existe um valor != "" se inválida vai para exessão*/
+			emiteAlerta(valor, "Falta valor de conversão!");/*Valida se existe um valor != "" se inválida vai para exessão*/
+			emiteAlerta(cotacao, "Falta opção de cotação!");/*Valida se existe um valor != "" se inválida vai para exessão*/
 		
 		} catch (NumberFormatException e) {
 			Print.msg("O campo valor deve ser prenchido com valores numéricos!");
