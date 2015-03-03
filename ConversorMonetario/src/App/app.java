@@ -1,7 +1,5 @@
-package App;
- 
+package App; 
 import java.awt.EventQueue;
-
 import V.Form_Painel;
  
 public class app {	

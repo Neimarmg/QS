@@ -11,11 +11,9 @@ public class Conversor {
 	 * Método de converção de valores
 	 */
 	private static float converteLibra(float valor, float cotacao){
+		//Desenvolver o miolo do método para calcular a cotação e retorna um valor float
 		
-		//Desenvolver o miolo do método para calcular a cotação e retorna um valor int
-		
-		
-		return valor*15;
+		return 0;
 	}
 	
 	
@@ -23,10 +21,10 @@ public class Conversor {
 	 * Método de converção de valores
 	 */
 	private static float converteEuro(float valor, float cotacao){
+		//Desenvolver o miolo do método para calcular a cotação e retorna um valor float
 		
-		//Desenvolver o miolo do método para calcular a cotação e retorna um valor int
-		
-		return valor*10;
+
+		return 0;
 	}
 	
 	
@@ -34,10 +32,9 @@ public class Conversor {
 	 * Método de converção de valores
 	 */
 	private  static float converteDolar(float valor, float cotacao){
-		
-		//Desenvolver o miolo do método para calcular a cotação e retorna um valor int
-		
-		return valor*5;
+		//Desenvolver o miolo do método para calcular a cotação e retorna um valor float
+
+		return 0;
 	}
 	
 	

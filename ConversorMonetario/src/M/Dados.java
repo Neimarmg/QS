@@ -2,7 +2,15 @@ package M;
 
 
 public class Dados {
-	static float valor,cotacao;
+	static float valor, cotacao, resultado;
+
+	public static float getResultado() {
+		return resultado;
+	}
+
+	public static void setResultado(float resultado) {
+		Dados.resultado = resultado;
+	}
 
 	public static float getValor() {
 		return valor;
