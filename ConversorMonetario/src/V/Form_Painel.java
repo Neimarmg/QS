@@ -55,30 +55,34 @@ public class Form_Painel extends JFrame {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private void AdicionaUnidadeMonetaria() {
 		txtMoeda = new JComboBox();
+		txtMoeda.setForeground(new Color(0, 0, 0));
 		txtMoeda.setFont(new Font("Trebuchet MS", Font.BOLD, 22));
 		txtMoeda.setBackground(UIManager.getColor("Button.disabledShadow"));
 		txtMoeda.setModel(new DefaultComboBoxModel(new String[] {"", "Dolar", "Euro", "Libra"}));
-		txtMoeda.setBounds(201, 178, 384, 48);
+		txtMoeda.setBounds(180, 178, 384, 48);
 		contentPane.add(txtMoeda);
 		
 		lblMoeda = new JLabel("Moeda:");
+		lblMoeda.setForeground(Color.PINK);
 		lblMoeda.setFont(new Font("Trebuchet MS", Font.BOLD, 20));
-		lblMoeda.setBounds(130, 181, 68, 45);
+		lblMoeda.setBounds(109, 181, 68, 45);
 		contentPane.add(lblMoeda);
 	}
 	
 	/***/
 	private void adicionarValorAConverter() {
 		lblValor = new JLabel("Valor:");
+		lblValor.setForeground(Color.PINK);
 		lblValor.setFont(new Font("Trebuchet MS", Font.BOLD, 20));
-		lblValor.setBounds(142, 76, 56, 46);
+		lblValor.setBounds(121, 76, 56, 46);
 		contentPane.add(lblValor);
 		
 		txtValor = new JTextField();
+		txtValor.setForeground(new Color(0, 0, 0));
 		txtValor.setBackground(UIManager.getColor("Button.disabledShadow"));
 		txtValor.setFont(new Font("Trebuchet MS", Font.BOLD, 22));
 		txtValor.setColumns(10);
-		txtValor.setBounds(201, 76, 384, 48);
+		txtValor.setBounds(180, 76, 384, 48);
 		contentPane.add(txtValor);
 	}
 	
@@ -86,15 +90,17 @@ public class Form_Painel extends JFrame {
 	/***/
 	private void adicionarCotacao() {
 		lblCotacao = new JLabel("Cotação:");
+		lblCotacao.setForeground(Color.PINK);
 		lblCotacao.setFont(new Font("Trebuchet MS", Font.BOLD, 20));
-		lblCotacao.setBounds(117, 272, 81, 46);
+		lblCotacao.setBounds(96, 272, 81, 46);
 		contentPane.add(lblCotacao);
 		
 		txtCotacao = new JTextField();
+		txtCotacao.setForeground(new Color(0, 0, 0));
 		txtCotacao.setBackground(UIManager.getColor("Button.disabledShadow"));
 		txtCotacao.setFont(new Font("Trebuchet MS", Font.BOLD, 22));
 		txtCotacao.setColumns(10);
-		txtCotacao.setBounds(201, 270, 384, 48);
+		txtCotacao.setBounds(180, 270, 384, 48);
 		contentPane.add(txtCotacao);
 	}
 	
@@ -110,14 +116,14 @@ public class Form_Painel extends JFrame {
 					getValor(txtValor.getText()), getCotacao(txtCotacao.getText()), getMoeda((String)txtMoeda.getSelectedItem ()).intern());
 			}
 		});
-		btnConverter.setBounds(201, 366, 384, 78);
+		btnConverter.setBounds(180, 366, 384, 78);
 		contentPane.add(btnConverter);
 		
 	}
 	
 	/***/
 	private void defineLayaut() {		
-		setBounds(100, 100, 759, 583);
+		setBounds(100, 100, 750, 605);
 		contentPane = new JPanel();
 		contentPane.setForeground(new Color(255, 204, 204));
 		setContentPane(contentPane);
